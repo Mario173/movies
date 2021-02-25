@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Things to watch</title>
+        <link rel="icon" href="Pictures/film.jpg" type="image/gif" sizes="16x16">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Home</h1>
+        <ul>
+            <li><a href="index.html" title="Go to Home page">Home</a></li>
+            <li><a href="movies.html" title="See my favourite movies">Movies</a></li>
+            <li><a href="series.html" title="See my favourite series">Series</a></li>
+            <li><a href="about.html" title="Learn more about me">About me</a></li>
+        </ul>
+        <p>
+            On this page you can find synopsis, my reviews and more about a few of my favourite movies 
+            and TV-series. For more information just click 'Movies' or 'Series' on the navigation bar up there, or
+            if you would like to know more about me, click 'About me'.
+            Hope you like the page, have fun!
+        </p>
+        <!--Galerija kao slideshow-->
+        <div id="stage" style="margin: 0 auto;">
+          
+            <img class="mySlides" src="Pictures/Movie-making4.jpg" alt="Movies">
+            <img class="mySlides" src="Pictures/camera.jpg" alt="Movies">
+            <img class="mySlides" src="Pictures/movie-making.jpg" alt="Movies">
+            <img class="mySlides" src="Pictures/wp3525441.jpg" alt="Movies">
+        </div>
+          
+        <script>
+          var myIndex = 0;
+          carousel();
+          
+          function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 2500);    
+          }
+        </script>
+    </body>
+</html>

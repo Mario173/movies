@@ -1,0 +1,122 @@
+body {
+    text-align: center;
+    background-color: #121212;
+    color: #F0F4F8;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+ul {
+    color: blue;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /*od color do ovdje sluzi za horizontalnu listu uz float: left u li*/
+    background-color: #334E68;
+    width: 100%;
+}
+
+li {
+    float: left;
+    width: 25%;
+}
+
+/*za linkove unutar lista*/
+li a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none; /*da makne podcrtano za linkove*/
+}
+
+/*kada prodes misem preko linka u listi*/
+li a:hover {
+    background-color: black;
+}
+
+/*za efekt fiksne pozadine*/
+.parallax {
+    /*postavit ćemo neku fiksnu visinu*/
+    min-height: 500px;
+    width: 100%;
+
+    /*ovako se stvara efekt*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#br2049 {
+    background-image: url("Pictures/br2049.jpg");
+}
+
+#howl {
+    background-image: url("Pictures/1787106.jpg");
+}
+
+#int {
+    background-image: url("Pictures/891207.jpg");
+}
+
+#sher {
+    background-image: url("Pictures/2083156.jpg");
+}
+
+#dark {
+    background-image: url("Pictures/1605477.jpg");
+}
+
+#brbd {
+    background-image: url("Pictures/781836.jpg");
+}
+
+i a {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+div h2 {
+    font-size: 200%;
+}
+
+div p {
+    font-size: 110%;
+}
+
+#stage img {
+    position: absolute;
+    width: 60%;
+    right: 20%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 10vh;
+    width: 100%;
+    background-color: #334E68;
+    color: #F0F4F8;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #F0F4F8;
+}
+
+@media only screen and (max-width: 1024px) {
+    div h2 {
+        font-size: 250%;
+    }
+    
+    div p {
+        font-size: 150%;
+    }
+    body {
+        font-size: 150%;
+    }
+  }
